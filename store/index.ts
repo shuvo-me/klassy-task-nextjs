@@ -13,7 +13,7 @@ type Action = {
 };
 
 const useStore = create<State & Action>((set) => ({
-  showModal: true,
+  showModal: false,
   couponInfo: {},
   openModal: () => set(() => ({ showModal: true })),
   hideModal: () => set(() => ({ showModal: false, couponInfo: {} })),
