@@ -32,7 +32,7 @@ const CouponDetailsModal = () => {
         className=" shadow bg-white max-w-[500px] max-h-[740px] overflow-auto rounded-[15px] mx-auto mt-[4rem] custom-scroll-bar pr-1"
         onClick={(e) => e.stopPropagation()}
       >
-        <div className="flex  p-4 items-center">
+        <div className="flex space-x-10 p-4 items-center gap-[">
           <div>
             <Image
               src={couponInfo?.image || ""}
