@@ -1,0 +1,53 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+  scrollbar-width: thin;
+  scrollbar-color: red;
+}
+
+html{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+ 
+}
+
+.coupon-box{
+  @apply min-h-[150px]  rounded-[10px] relative;
+}
+
+
+
+.coupon-circle-left{
+  @apply absolute top-[31%] left-[-35px] bg-white rounded-full h-[60px] w-[60px]
+}
+.coupon-circle-right{
+  @apply absolute top-[31%] right-[-35px] bg-white rounded-full h-[60px] w-[60px]
+}
+
+/* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 16px;
+}
+
+*::-webkit-scrollbar-thumb {
+  height: 56px;
+  border-radius: 8px;
+  border: 4px solid transparent;
+  background-clip: content-box;
+  background-color: #d3066cca;
+}
+*::-webkit-scrollbar-track {
+  border-radius: 8px;
+}
+
+.btn.btn-sm {
+  padding: 0.5rem 1.6rem;
+  font-size: .64rem;
+}
+
+.btn-danger {
+  @apply text-white bg-[#d3066d] 
+}
